@@ -25,3 +25,4 @@ replay_pid*
 /python-app/logs/
 /java-app/logs/
 /.idea/
+/python-app/venv/

@@ -68,10 +68,25 @@
 ```bash
 set JAVA_HOME=C:\soft\OpenJDK22U-jdk_x64_windows_hotspot_22.0.2_9\jdk-22.0.2+9
 set M2_HOME=C:\soft\apache-maven-3.9.9-bin\apache-maven-3.9.9
-set PATH=%JAVA_HOME%\bin;%M2_HOME%\bin;%PATH%
+set PYTHONHOME=C:\soft\python-3.9.13
+set PATH=%PYTHONHOME%;%PYTHONHOME%\Scripts;%JAVA_HOME%\bin;%M2_HOME%\bin;%PATH%
 ```
 # Run Java Application
 ```bash
-cd C:\github\springboot-elk\javalogdemo
+cd C:\github\springboot-elk\java-app
 mvn spring-boot:run
 ```
+# Run Python Application
+```bash
+cd C:\github\springboot-elk\python-app
+# need to run below commands only once
+python -m venv venv
+venv\Scripts\activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+# run the application
+python app.py
+```
+# Access the application
+- Java application- http://localhost:8080/helloworld
+- Python application- http://localhost:5000/helloworld

@@ -103,6 +103,6 @@ npm start
 
 # Access the application
 
-- Java application- http://localhost:8080/helloworld
-- Python application- http://localhost:5000/helloworld
-- NodeJS application- http://localhost:3000/helloworld
+- Java application- http://localhost:8080/hello
+- Python application- http://localhost:5000/hello
+- NodeJS application- http://localhost:3000/hello

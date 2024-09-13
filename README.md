@@ -59,9 +59,9 @@
 # Key takeaways
 - Define a common log data model and format
 - Let producer applications log message in JSON format. It avoids logstash or pipeline and complex Grok patterns
-# Sample Application
+# Sample Application 
 - a small version of the application with Java, Python, NodeJS and ELK stack can be found in the below github repository
-- 
+- source code https://github.com/balajich/fix-elk.git
 # Prerequisites
 
 ```bash

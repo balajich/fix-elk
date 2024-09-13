@@ -56,6 +56,8 @@
 - filebeat reads the log files and publishes JSON message to elasticsearch index
 - No logstash or pipeline is used in the log message flow because a log message is already in JSON format
 - Kibana is used to search and visualize logs
+# Architecture Diagram
+![fix-elk.drawio.png](fix-elk.drawio.png)
 # Key takeaways
 - Define a common log data model and format
 - Let producer applications log message in JSON format. It avoids logstash or pipeline and complex Grok patterns
@@ -63,7 +65,6 @@
 - a small version of the application with Java, Python, NodeJS and ELK stack can be found in the below github repository
 - source code https://github.com/balajich/fix-elk.git
 # Prerequisites
-
 ```bash
 set JAVA_HOME=C:\soft\OpenJDK22U-jdk_x64_windows_hotspot_22.0.2_9\jdk-22.0.2+9
 set M2_HOME=C:\soft\apache-maven-3.9.9-bin\apache-maven-3.9.9
